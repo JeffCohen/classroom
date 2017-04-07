@@ -1,0 +1,14 @@
+/*
+ * This is a manifest file that'll be compiled into application.css.
+ *
+ *= require rails_bootstrap_forms
+ *= require_self
+ *
+ * You're free to add your application-wide styles to this file, after these comments.
+ *
+ */
+
+/*body { background-color: #EEE; }*/
+
+.thumbnail { border: none; }
+.page-title h1 { border-bottom: solid 2px #888; padding-bottom: 6px; margin-bottom: 48px;}

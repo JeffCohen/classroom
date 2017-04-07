@@ -1,0 +1,8 @@
+echo Getting the latest code from GitHub...
+git clean -qdf
+git checkout -qf .
+git pull -q
+echo Resetting your database...
+bundle exec rake db:migrate:reset db:seed
+echo
+echo "You are now caught up."

@@ -1,0 +1,31 @@
+<% values = ['ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'jack', 'queen', 'king'] %>
+<% suits = ['clubs', 'spades', 'diamonds', 'hearts'] %>
+
+<img width="100px" src="http://golearntocode.com/images/cards/king_of_diamonds.png">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<% base_url = "http://golearntocode.com/images/cards/" %>
+<% deck_of_cards = suits.map { |suit| values.map { |v| base_url + v + "_of_" + suit + ".png" } }.flatten %>
+<% deck_of_cards.each do |card| %>
+  <!-- <img width="200px" src="<%= card %>"> -->
+<% end %>

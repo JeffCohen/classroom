@@ -1,0 +1,22 @@
+<div class="row">
+
+  <% movie = Movie.find_by(imdb_key: "tt0112384") %>
+
+  <!-- Draw the movie poster with the title underneath -->
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <%= image_tag movie.poster_url, size: '210x310' %>
+
+      <div class="caption text-center">
+        <h3>
+          <a href="/movies/<%= movie.imdb_key %>">
+            <%= movie.title %>
+          </a>
+        </h3>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
